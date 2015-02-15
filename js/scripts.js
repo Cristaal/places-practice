@@ -1,5 +1,5 @@
 $(document).ready(function {
-  $("form#place_tracker").submit(function(event) {
+  $("form#place-tracker").submit(function(event) {
     event.preventDefault();
 
     var inputtedPlace = $("input#places").val();
@@ -11,5 +11,5 @@ $(document).ready(function {
       }
     };
   });
-  $("ul#placeList").append("<li><span class='place'>" + )
+  $("ul#placeList").append("<li><span class='place'>" + newPlace.location + newPlace.time + newPlace.note)
 })
