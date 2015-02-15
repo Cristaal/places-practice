@@ -14,12 +14,18 @@
     <div class-"row">
       <div class="col-md-8">
 
-        <form id="place-tracker">
+        <form id="place_tracker">
           <div class="form-group">
-            <label for "places">Enter a place, time of year you visited, and any notes you may have</label>
-            <input id="location" type="text" name="location" placeholder="Location"></br>
-            <input id="time" type="text" name="time" placeholder="Time of Visit"></br>
-            <input id="notes" type="text" name="notes" placeholder="Notes"></br>
+            <label for="places">Location</label>
+            <input type="text" class="form-control" id="places" placeholder="Location"></br>
+          </div>
+          <div class="form-group">
+            <label for="time">Time of Visit</label>
+            <input type="text" class="form-control" id="time" placeholder="Time of Visit"></br>
+          </div>
+          <div class="form-group">
+            <label for "notes">Enter Notes</label>
+            <input type="text" class="form-control" id="notes" placeholder="Notes"></br>
           </div>
 
           <button type="submit" class="btn">Click here to enter your information</button>
