@@ -6,10 +6,12 @@ $(document).ready(function {
     var inputtedTime = $("input#time").val();
     var inputtedNote = $("input#notes").val();
     var newPlace = { location: inputtedPlace, time: inputtedTime, note: inputtedNote
-      fullLocation: function() {
-        return this.location + ", " + this.time + ", " + this.note;
-      }
-    };
+
+    $("ul#placeList").append("<li><span class='place'>" + newPlace.location + newPlace.time + newPlace.note)
+);
+
+    $("input#places").val("");
+    $("input#time").val("");
+    $("input#notes").val("");
   });
-  $("ul#placeList").append("<li><span class='place'>" + newPlace.location + newPlace.time + newPlace.note)
-})
+});
